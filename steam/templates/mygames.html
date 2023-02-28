@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="{%static 'images/favicon.png'%}" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Games</title>
+
+	<style>
+		body {
+			background-color: #060322;
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 1rem;
+			background-color:  #580108;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+			color: #333;
+		}
+	
+		table th, table td {
+			padding: 0.75rem;
+			text-align: left;
+			vertical-align: middle;
+			border-top: 1px solid #e6e6e6;
+		}
+	
+		table th {
+			font-weight: bold;
+			background-color: #f6f6f6;
+		}
+	
+		
+	
+	
+		h1 {
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	
+
+
+
+{%if nogame%}
+<a href="/" ><img width='50' height="50" style="position: absolute; top: 0; left: 0;" src="{%static 'images/home.png'%}" alt=""></a>
+	<h1  style="text-align: center;">There are no Games in your Library.</h1>
+{%else%}
+<a href="/" ><img width='50' height="50" style="position: absolute; top: 3%; right: 1%;" src="{%static 'images/home.png'%}" alt=""></a>
+
+<table >
+	{%if cod%}
+
+	<tr>
+		<td>
+			<img height="100px" width="150px" src="{% static 'images/cod.jpg' %}" alt="">
+		</td>
+
+		<td><h1>Call of Duty: Modern Warfare</h1></td>
+	</tr>
+
+	{%endif%}
+
+	{%if ac%}
+	
+	<tr>
+		<td><img height="100px" width="150px" src="{% static 'images/ac.jpg' %}" alt=""></td>
+		<td><h1>Assassin's Creed: Mirage</h1></td>
+	</tr>
+	</a>
+	{%endif%}
+
+	{%if sam%}
+	<tr>
+		<td> <img height="100px" width="150px" src="{% static 'images/sam.jpg' %}" alt=""></td>
+		<td><h1>Serious Sam 4</h1></td>
+	</tr>
+	{%endif%}
+
+    {%if dmc%}
+	<tr>
+		<td> <img height="100px" width="150px" src="{% static 'images/dmc.jpg' %}" alt=""></td>
+		<td><h1>Devil May Cry 4</h1></td>
+	</tr>
+	{%endif%}
+
+    {%if nfs%}
+	<tr>
+		<td> <img height="100px" width="150px" src="{% static 'images/nfs.jpg' %}" alt=""></td>
+		<td><h1>Need for Speed</h1></td>
+	</tr>
+	{%endif%}
+
+
+    {%if gta%}
+	<tr>
+		<td> <img height="100px" width="150px" src="{% static 'images/gta5.jpg' %}" alt=""></td>
+		<td><h1>Grand Theft Auto V</h1></td>
+	</tr>
+	{%endif%}
+
+    {%if division%}
+	<tr>
+		<td> <img height="100px" width="150px" src="{% static 'images/division.jpg' %}" alt=""></td>
+		<td><h1>The Division</h1></td>
+	</tr>
+	{%endif%}
+
+    {%if spiderman%}
+	<tr>
+		<td> <img height="100px" width="150px" src="{% static 'images/spiderman.jpg' %}" alt=""></td>
+		<td><h1>Spider-Man</h1></td>
+	</tr>
+	{%endif%}
+
+    {%if tombraider%}
+	<tr>
+		<td> <img height="100px" width="150px" src="{% static 'images/tomb.jpg' %}" alt=""></td>
+		<td><h1>Tomb Raider</h1></td>
+	</tr>
+	{%endif%}
+
+    {%if uncharted%}
+	<tr>
+		<td> <img height="100px" width="150px" src="{% static 'images/uncharted.jpg' %}" alt=""></td>
+		<td><h1>Uncharted 4: A Thief's End</h1></td>
+	</tr>
+	{%endif%}
+
+</table>
+
+{%endif%}
+         
+          
+       
+         
+      
+     
+       
+
+     
+    
+</body>
+</html>
+
+
+
+    
